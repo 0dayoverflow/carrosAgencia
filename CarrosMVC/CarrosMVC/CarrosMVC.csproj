@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{77253D39-2709-42A9-8DEA-F2F8BE787A39}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CarrosMVC</RootNamespace>
+    <AssemblyName>CarrosMVC</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Web.DataVisualization.Design" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Windows.Forms.DataVisualization.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controlador\ClienteModel.cs" />
+    <Compile Include="Controlador\conexionController.cs" />
+    <Compile Include="Controlador\loginController.cs" />
+    <Compile Include="Controlador\RefaccionesController.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\CarroModel.cs" />
+    <Compile Include="Modelo\ConexionModel.cs" />
+    <Compile Include="Modelo\LoginModel.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vista\AdminCRUDS\CarrosA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\AdminCRUDS\CarrosA.Designer.cs">
+      <DependentUpon>CarrosA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\AdminCRUDS\ProximaCita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\AdminCRUDS\ProximaCita.Designer.cs">
+      <DependentUpon>ProximaCita.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\AdminCRUDS\RefaccoinesA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\AdminCRUDS\RefaccoinesA.Designer.cs">
+      <DependentUpon>RefaccoinesA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\AdminCRUDS\ServicioA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\AdminCRUDS\ServicioA.Designer.cs">
+      <DependentUpon>ServicioA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\AdminCRUDS\UsuarioA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\AdminCRUDS\UsuarioA.Designer.cs">
+      <DependentUpon>UsuarioA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\AdminPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\AdminPanel.Designer.cs">
+      <DependentUpon>AdminPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\DuenioXCarro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\DuenioXCarro.Designer.cs">
+      <DependentUpon>DuenioXCarro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\EstatusServicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\EstatusServicio.Designer.cs">
+      <DependentUpon>EstatusServicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\loginAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\loginAdmin.Designer.cs">
+      <DependentUpon>loginAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\loginUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\loginUser.Designer.cs">
+      <DependentUpon>loginUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\UserPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\UserPanel.Designer.cs">
+      <DependentUpon>UserPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\UserViews\CarroU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\UserViews\CarroU.Designer.cs">
+      <DependentUpon>CarroU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\UserViews\ClienteU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\UserViews\ClienteU.Designer.cs">
+      <DependentUpon>ClienteU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\UserViews\RefaccionesU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\UserViews\RefaccionesU.Designer.cs">
+      <DependentUpon>RefaccionesU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\UserViews\ServicioU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\UserViews\ServicioU.Designer.cs">
+      <DependentUpon>ServicioU.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Vista\AdminCRUDS\CarrosA.resx">
+      <DependentUpon>CarrosA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\AdminCRUDS\ProximaCita.resx">
+      <DependentUpon>ProximaCita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\AdminCRUDS\RefaccoinesA.resx">
+      <DependentUpon>RefaccoinesA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\AdminCRUDS\ServicioA.resx">
+      <DependentUpon>ServicioA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\AdminCRUDS\UsuarioA.resx">
+      <DependentUpon>UsuarioA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\AdminPanel.resx">
+      <DependentUpon>AdminPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\DuenioXCarro.resx">
+      <DependentUpon>DuenioXCarro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\EstatusServicio.resx">
+      <DependentUpon>EstatusServicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\loginAdmin.resx">
+      <DependentUpon>loginAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\loginUser.resx">
+      <DependentUpon>loginUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\UserPanel.resx">
+      <DependentUpon>UserPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\UserViews\CarroU.resx">
+      <DependentUpon>CarroU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\UserViews\ClienteU.resx">
+      <DependentUpon>ClienteU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\UserViews\RefaccionesU.resx">
+      <DependentUpon>RefaccionesU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\UserViews\ServicioU.resx">
+      <DependentUpon>ServicioU.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
